@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/home_page.css" />
+    
+</head>
+<body>
+    <nav>
+        <a href="homePage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Sevices</a>
+        <a href="blog.html">Blog</a>
+        <a href="shop.html">Shop</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+    <!-- background-first -->
+    <div class="sect sectOne"></div>
+    <div class="subSection"> </div>
+    <!-- background-second -->
+    <div >
+      <img src="../images/home_page/wall.jpg" class="sect sectTwo" alt="firstBg">
+     </div>
+    <div class="subSection_2"></div>
+    <!-- background-third -->
+    <div class="sect sectThree">
+        
+      <h5>TESTIMONIALS</h5> <br>
+      <p class="one"><img src="../images/home_page/avatar_one.jpg" alt="Avatar" class="avatar"><b>Julia Parker </b><br> <br> "I love the coffee and atmosphere at your coffee shop. I attend a meeting there on most Monday mornings. When I arrive, I’m greeted with a smile and the Barista always takes the time to fix my coffee just as I want it. My favorite drink is the Carmel Mocha." </p>
+      <p class="two"><img src="../images/home_page/avatar_two.jpg" alt="Avatar" class="avatar"><b>John Miller</b> <br><br> "I tried coffee here for the first time just the other day. The location may seem hidden but it is actually very easy to find Coffee Shop on the map. I ordered just a medium regular coffee and it was very good. The lady who poured the coffee was very friendly. I will definitely be back!" </p>
+    </div> 
+    <div class="subSection_3"></div>
+    <!-- background-fourth -->
+    <div class="sect sectFour">
+      
+        <img src="../images/home_page/lightBrown.jpg" alt="lightBrown" class="leftHalf" >
+        <p class="three"><br><br><br><br><br><br><br><br><br> "We provide a variety of services both to our new and regular customers. If you can think of anything connected with coffee, then we can offer it at our Coffee Shop."</p>
+        <img src="../images/home_page/a-cup-of-hot-coffee-with-coffee-beans.jpg" alt="coffee" class="rightHalf" >
+      
+      
+    </div>
+      
+            
+                    <img src="../images/home_page/6a0120a541c924970c0133ed524c37970b.gif" class="img" alt="coffe cafe">
+                    <br><br><br>
+             <header id="header" class="header">
+                   <h1>START THE DAY WITH </h1>
+                   <br>
+                   <h2 > GREAT TASTE</h2> <br>
+                  <a href="http://"><img src="../images/home_page/if_gtk-media-next-ltr_39071.png" class="imgs" alt="next arrow"></a> 
+                   <div id="caroufredsel_next" class="caroufredsel_next" style="display:block;">
+                       <span></span>
+                   </div>
+               <a href="http://"><h3 >More Info</h3></a> 
+             </header>  
+                   
+                   
+          
+               
+                          
+            
+              <div>
+                
+              </div>
+            </section>   
+            <script>
+                    var lastKnownScrollY = 0;
+var currentScrollY = 0;
+var ticking = false;
+var idOfHeader = 'header';
+var eleHeader = null;
+const classes = {
+  pinned: 'header-pin',
+  unpinned: 'header-unpin',
+};
+function onScroll() {
+  currentScrollY = window.pageYOffset;
+  if (currentScrollY < lastKnownScrollY) {
+    pin();
+  } else if (currentScrollY > lastKnownScrollY) {
+    unpin();
+  }
+  lastKnownScrollY = currentScrollY;
+}
+function pin() {
+  if (eleHeader.classList.contains(classes.unpinned)) {
+    eleHeader.classList.remove(classes.unpinned);
+    eleHeader.classList.add(classes.pinned);
+  }
+}
+function unpin() {
+  if (eleHeader.classList.contains(classes.pinned) || !eleHeader.classList.contains(classes.unpinned)) {
+    eleHeader.classList.remove(classes.pinned);
+    eleHeader.classList.add(classes.unpinned);
+  }
+}
+window.onload = function() {
+  eleHeader = document.getElementById(idOfHeader);
+  document.addEventListener('scroll', onScroll, false);
+}
+    
+                    </script>
+</body>
+</html>
