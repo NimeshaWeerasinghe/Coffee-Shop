@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+}
+
+
+html{
+    
+    background-attachment: absolute;
+    background-color: white;
+}
+@font-face {
+    font-family: 'Luminari';
+    
+    font-style: normal;
+    
+    font-weight: normal;
+   
+    
+    src: local('Luminari'), url('fonts/Luminari-Regular.woff') format('woff');
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: rgba(0,0,0,.5);
+        z-index: 99;
+        text-align: center;
+    }
+    nav a{
+        text-decoration: none;
+        color: #fff;
+        margin-left: 30px;
+        line-height: 50px;
+    }
+    nav a:hover{
+        color: rgb(186, 226, 43);
+    }
+body{
+    
+    background-color: white;
+    
+    }
+    .sect{
+        height: 100%;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;  /* fixing images */
+       
+    }
+    
+    
+    .sectOne{
+        background-image: url('../images/home_page/about_cover.jpg');
+        background-size: 100% 50%;
+        background-attachment: fixed;
+    }
+.sectOne h1{
+    
+   font-size: 80px;
+   color:rgb(20, 3, 3);
+    text-align: center;
+    background: fixed;
+}
+.sectOne h2{
+    font-size: 50px;
+   color:rgb(32, 3, 3);
+    text-align: center;
+    background: fixed;
+}
+.para p{
+    left:24% ;
+    position: absolute;
+    text-align:center;
+    color: rgb(66, 59, 59);
+    font-size: 1.5em;
+    background: fixed;
+}
+.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 14%;
+    top: 20%;
+}
+.box_one{
+    left:14% ;
+    position: absolute;
+    width: 345px;
+    padding: 13px;
+    border: 5px solid gray;
+    margin: 0;
+    background-color: grey;
+    background: fixed;
+    color: rgb(70, 12, 12);
+    font-family: 'Luminari';
+}
+.box_two{
+    left:64% ;
+    position: absolute;
+    width: 345px;
+    padding: 13px;
+    border: 5px solid gray;
+    margin: 0;
+    background-color: grey;
+    background: fixed;
+    color: rgb(70, 12, 12);
+    font-family: 'Luminari';
+}
+.footer p1{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(252, 113, 113);
+    color: white;
+    text-align: center;
+}
+.footer a{
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+}
+.footer a:hover{
+    background-color: blueviolet;
+}
+.tweeter{
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    left: 35%;
+}
+
+.fb{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+   border-radius: 50%;
+    left: 45%;
+}
+.youtube{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+   border-radius: 50%;
+    left: 55%;
+}
